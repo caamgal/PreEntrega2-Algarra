@@ -6,8 +6,14 @@
         <title>Contacto</title>
         <link rel="shortcut icon" href="./images/icon v.png">
         <link rel="stylesheet" href="../style.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     </head>
     <body>
+        <!-- Bootstrap JS and its dependencies -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <nav>
             <header>
                 <ul>
@@ -19,53 +25,55 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <h1>Contacto</h1>
+        <main class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-8">
+                <h1>Contacto</h1>
 
-            <h2>¡Tus comentarios son muy importantes!</h2>
-            <ul>
-                <li>Si encuentras algún error en
-                    la información compartida en el website, fuiste a un lugar que ya no está abierto o ya no ofrece opciones vegetarianas o veganas por favor déjanoslo saber así mantenemos la guía actualizada.</li>
-                <li>Si tienes un proyecto vegetariano o vegano y quieres que lo compartamos en la Guía Veggie de Bariloche, déjanos tus datos para contactarte.</li>
-                </ul>
-            <form>
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" placeholder="Ingresa tu nombre"
-                        id="nombre"
-                        required>
+                <h2>¡Tus comentarios son muy importantes!</h2>
+                <ul>
+                    <li>Si encuentras algún error en
+                        la información compartida en el website, fuiste a un lugar que ya no está abierto o ya no ofrece opciones vegetarianas o veganas por favor déjanoslo saber así mantenemos la guía actualizada.</li>
+                    <li>Si tienes un proyecto vegetariano o vegano y quieres que lo compartamos en la Guía Veggie de Bariloche, déjanos  tus datos para contactarte.</li>
+                    </ul>
+                <form>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" placeholder="Ingresa tu nombre"
+                            id="nombre"
+                            required>
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="password" placeholder="Ingresa tu teléfono"
+                            id="telefono">
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" placeholder="Ingresa tu e-mail"
+                            id="email"
+                            required>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea cols="20" rows="5"
+                            placeholder="Ingresa tu mensaje aquí"
+                            id="mensaje" required></textarea>
+                    </div>
+                    <div>
+                        <h3>¿Quieres recibir novedades a tu casilla de E-mail?</h3>
+                        <label for="si">Sí, acepto</label>
+                        <input type="radio" name="terminoscondiciones" id="si">
+                        <label for="no">No, gracias</label>
+                        <input type="radio" name="terminoscondiciones" id="no">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                    </form>
                 </div>
-                <div>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="password" placeholder="Ingresa tu teléfono"
-                        id="telefono">
-                </div>
-                <div>
-                    <label for="email">E-mail:</label>
-                    <input type="email" placeholder="Ingresa tu e-mail"
-                        id="email"
-                        required>
-                </div>
-                <div>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea cols="20" rows="5"
-                        placeholder="Ingresa tu mensaje aquí"
-                        id="mensaje" required></textarea>
-                </div>
-                <div>
-                    <h3>¿Quieres recibir novedades a tu casilla de E-mail?</h3>
-
-                    <label for="si">Sí, acepto</label>
-                    <input type="radio" name="terminoscondiciones" id="si">
-
-                    <label for="no">No, gracias</label>
-                    <input type="radio" name="terminoscondiciones" id="no">
-                </div>
-                <br>
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-            </form>
+            </div>
         </main>
         <br>
         <footer>
